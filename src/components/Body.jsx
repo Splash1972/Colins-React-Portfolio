@@ -1,104 +1,67 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container';
+import tb from './img/techblog.jpg';
+import nt from './img/notetaker.jpg'
+import jate from './img/jate.jpg'
 
 function Body() {
     return (
-        <Container>
+        <Container className='mb-5'>
             <Row xs={1} md={3} className="g-4">
                 {/* {Array.from({ length: 6 }).map((_, idx) => ( */}
                 <Col>
                     <Card className="shadow" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img variant="top" src={nt} />
                         <Card.Body>
-                            <Card.Title>Card One</Card.Title>
+                            <Card.Title>Note Taker</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                A website that allows you to take notes and displays them on the screen.
                             </Card.Text>
-                            <Button variant="primary">Website</Button>{' '}
-                            <Button variant="primary">GitHub Repo</Button>
+                            <a href="https://colin-s-tech-blog.onrender.com/" target="_blank" className="btn btn-primary">
+                                Website
+                            </a>{' '}
+                            <a href="https://github.com/Splash1972/Colin-s-Tech-Blog" target="_blank" className="btn btn-primary">
+                                GitHub Repo</a>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col>
                     <Card className="shadow" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img variant="top" src={tb} />
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
+                            <Card.Title>Tech Blog</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                An app that allows a user to register/login and post their thoughts on all things tech.
                             </Card.Text>
-                            <Button variant="primary">Website</Button>{' '}
-                            <Button variant="primary">GitHub Repo</Button>
+                            <a href="https://colin-s-tech-blog.onrender.com/" target="_blank" className="btn btn-primary">
+                                Website
+                            </a>{' '}
+                            <a href="https://github.com/Splash1972/Colin-s-Tech-Blog" target="_blank" className="btn btn-primary">
+                                GitHub Repo</a>
                         </Card.Body>
                     </Card>
                 </Col>
                 <Col>
                     <Card className="shadow" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Img variant="top" src={jate} />
                         <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
+                            <Card.Title>JATE</Card.Title>
                             <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                A project that turns your browser into a simple text editor, and can be installed on your system.
                             </Card.Text>
-                            <Button variant="primary">Website</Button>{' '}
-                            <Button variant="primary">GitHub Repo</Button>
+                            <a href="https://colin-s-tech-blog.onrender.com/" target="_blank" className="btn btn-primary">
+                                Website
+                            </a>{' '}
+                            <a href="https://github.com/Splash1972/Colin-s-Tech-Blog" target="_blank" className="btn btn-primary">
+                                GitHub Repo</a>
                         </Card.Body>
                     </Card>
                 </Col>
                 {/* ))} */}
             </Row>
-            <Row xs={1} md={3} className="g-4">
-                {/* {Array.from({ length: 6 }).map((_, idx) => ( */}
-                <Col>
-                    <Card className="shadow" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Website</Button>{' '}
-                            <Button variant="primary">GitHub Repo</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className="shadow" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Website</Button>{' '}
-                            <Button variant="primary">GitHub Repo</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                <Col>
-                    <Card className="shadow" style={{ width: '18rem' }}>
-                        <Card.Img variant="top" src="holder.js/100px180" />
-                        <Card.Body>
-                            <Card.Title>Card Title</Card.Title>
-                            <Card.Text>
-                                Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
-                            </Card.Text>
-                            <Button variant="primary">Website</Button>{' '}
-                            <Button variant="primary">GitHub Repo</Button>
-                        </Card.Body>
-                    </Card>
-                </Col>
-                {/* ))} */}
-            </Row>
+            
         </Container>
     );
 }
