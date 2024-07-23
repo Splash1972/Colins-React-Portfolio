@@ -39,8 +39,8 @@ function AboutMe() {
   };
 
   return (
-    <Container className='text-center'>
-    <Card className='shadow mb-5'>
+    <Container className='text-center d-flex justify-content-center align-items-center'>
+    <Card className='shadow mb-5' style={{ width: '50rem' }}>
       <Card.Header>
         <Nav variant="pills" activeKey={selectedPill} onSelect={handleSelect}> {/* Update state on select */}
           <Nav.Item>

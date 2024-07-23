@@ -5,8 +5,15 @@ import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Footer() {
+    const footerStyle = {
+        position: 'fixed',
+        bottom: 0,
+        width: '100%',
+        zIndex: 1000,
+        backgroundColor: '#f8f9fa', // Adjust background color as needed
+      };
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar expand="lg" style={footerStyle} className="bg-body-tertiary">
             <Container className='mt-2 mb-5'>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">

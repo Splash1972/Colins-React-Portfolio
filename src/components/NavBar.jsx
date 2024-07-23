@@ -24,7 +24,7 @@ function NavBar() {
       </Button>
       <Collapse in={open}>
         <div id="example-collapse-text" className='fs-6'>
-          Colin is a professional drummer/producer and developer
+          Colin is a professional drummer/producer and full-stack developer
         </div>
       </Collapse>
       </Navbar.Brand>
@@ -35,10 +35,12 @@ function NavBar() {
             <Nav.Link href="mailto:colindrums@me.com">Email Me</Nav.Link>
             <NavDropdown title="More Here" id="basic-nav-dropdown">
               <NavDropdown.Item href="https://music.apple.com/us/artist/colin-robinson/1485445835" target="_blank">Music I've Written</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">
-                Another action
+              <NavDropdown.Item><Link to="/MoreWork" className='text-decoration-none'>
+                More Work Examples
+                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+              <NavDropdown.Item><Link to="/BlueMan" className='text-decoration-none'>Fun Fact</Link>
+                </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item><Link to="/AboutMe" className='text-decoration-none'>
                 About Me
