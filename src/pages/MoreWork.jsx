@@ -7,7 +7,7 @@ import cs from '../components/img/CS.jpg';
 
 function MoreWork() {
     return (
-        <Container className='mb-5'>
+        <Container className='mb-5 d-flex justify-content-center align-items-center'>
             <Row xs={1} md={3} className="g-4">
                 {/* {Array.from({ length: 6 }).map((_, idx) => ( */}
                 <Col>
