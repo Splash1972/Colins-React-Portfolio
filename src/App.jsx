@@ -1,7 +1,7 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import NavBar from './components/NavBar'
-import Body from './components/Body'
+// import Body from './components/Body'
 import Footer from './components/Footer'
 
 
@@ -10,12 +10,12 @@ import Slides from './components/Carousel';
 
 function App() {
   return (
-  <div>
+  <main>
     <NavBar />
     <Slides />
-    <Body />
+    <Outlet />
     <Footer />
-  </div>
+  </main>
   );
 }
 
