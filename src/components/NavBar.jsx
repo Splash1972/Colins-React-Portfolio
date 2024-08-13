@@ -14,7 +14,7 @@ function NavBar() {
   const currentPage = useLocation().pathname;
   const [open, setOpen] = useState(false);
   return (
-  <Navbar expand="lg" className="bg-body-tertiary">
+  <Navbar expand="lg" className="bg-body-tertiary mb-4">
       <Container>
         <Navbar.Brand><Button className='btn-light border'
         onClick={() => setOpen(!open)}

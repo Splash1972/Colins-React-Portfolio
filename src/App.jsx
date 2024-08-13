@@ -12,8 +12,8 @@ function App() {
   return (
   <main>
     <NavBar />
-    <Slides />
     <Outlet />
+    <Slides />
     <Footer />
   </main>
   );
